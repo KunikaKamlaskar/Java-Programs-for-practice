@@ -1,0 +1,97 @@
+Swapping and finding largest number's use in array.
+
+
+
+//Swap 2 numbers
+/*
+public class Main
+{
+	public static void main(String[] args) {
+		int num1,num2,temp;
+		num1= 10;
+		num2=5;
+		System.out.println("Original numbers are : \n num1= "+num1+"\t num2= "+num2 );
+
+		temp= num1;
+		num1=num2;
+		num2= temp;
+		System.out.println("Swapped Numbers\n num1= "+num1+"\t num2= "+num2 );
+	}
+}
+*/
+
+
+
+
+
+
+
+//Find largest among 3 Numbers
+/*
+public class Main{
+    public static void main(String[] args){
+        int num1,num2,num3;
+        num1= 40;
+        num2=220;
+        num3=80;
+        
+        if(num1>num2 && num1>num3){
+            System.out.println("Num1 IS GREATEST "+num1);
+        }
+        else if  (num1<num2 && num3<num2){
+            System.out.println("num2 is GREATEST "+num2);
+        }
+        else{
+            System.out.println("Num3 is GREATEST "+num3);
+        }
+    }
+    
+}
+*/
+
+
+
+
+
+
+//Find largest among array
+//1stly sort it in ascending order then u will get the largest at the end of array then just print it. 
+/*
+Java program to find the largest number in an array. 
+To find the largest element of the given array, first of all, sort the array. 
+Sorting an array. 
+If the first element is greater than the second swap them. 
+Then, compare 2nd and 3rd elements if the second element is greater than the 3rd swap them. 
+Repeat this till the end of the array.
+*/
+//or u can use sort() function which is in java.util.*; class
+
+
+/*
+public class Main{
+    public static void main(String [] args){
+        int temp=0;
+        int i,j;
+        int arr[]={1550,70,3000,4045,5550};
+        int size=arr.length;
+
+        for( i=0;i<size;i++){
+            for(j= i+1;j<size;j++){
+            if(arr[i]>arr[j]){
+                 temp=arr[i];
+                 arr[i]=arr[j];
+                 arr[j]=temp;
+                }
+            }
+           
+        }
+        System.out.println("largest num is "+arr[size-1]);
+
+        }
+}
+*/
+
+
+
+//NOTE: if we take bank managemwnt system......we can use it in finding the person who has highest amount of money in bank... 
+
