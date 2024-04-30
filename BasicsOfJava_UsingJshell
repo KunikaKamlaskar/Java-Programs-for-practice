@@ -256,6 +256,54 @@ jshell> /list
 jshell> MyFirstNumber= 10+5-19;
 MyFirstNumber ==> -4
 
+jshell> int SecondNum=15;
+SecondNum ==> 15
+
+
+jshell> int ThirdNum= 507;
+ThirdNum ==> 507
+
+jshell> /var
+|    int MyFirstNumber = -4
+|    int SecondNum = 15
+|    int ThirdNum = 507
+------------------------------------------------
+
+
+jshell> int total= MyFirstNumber+SecondNum+ThirdNum;
+total ==> 518
+--------------------------------------------
+Primitive Data Types:
+byte           Short           Int           Long
+Float           Double
+Char
+Boolean
+-----------------------------
+How to find Minimum and maximum limit on Integer:
+jshell> int myminINTValue= Integer.MIN_VALUE;
+myminINTValue ==> -2147483648
+
+jshell> int mymaxINTValue= Integer.MAX_VALUE;
+mymaxINTValue ==> 2147483647
+--------------------------------
+jshell> System.out.print("Minimum integer value is "+myminINTValue);
+Minimum integer value is -2147483648
+----------------------------------
+Wrapper classes for Primitive data type
+Primitive type Wrapper class
+int            Integer
+char           Character
+boolean        Boolean
+float          Float
+------------------------
+Operator, Operand, Expression
+
+int total= 10 +7;
+here,
+Operator is +,=
+Operand is 10,7
+Expression is 10+7
+----------------------
 
 
 
