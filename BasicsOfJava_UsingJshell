@@ -296,6 +296,26 @@ char           Character
 boolean        Boolean
 float          Float
 ------------------------
+Operators:
+Additional operators:           |           Postfix, Prefix operators
++                               |           Variable++ or Variable+=1
+_                               |           ++Variable
+%                               |           Variable-- or Variable-=1
+*                               |           --Variable
+/                               |
+-----------------------
+Compound Assignment Operator:
+result -=5.5;
+result=(int)(result-5.5);
+
+Example:
+jshell> int result =10;
+result ==> 10
+
+jshell> int total=(int)(result-5.5);
+total ==> 4
+
+-----------------------------
 Operator, Operand, Expression
 
 int total= 10 +7;
@@ -304,6 +324,17 @@ Operator is +,=
 Operand is 10,7
 Expression is 10+7
 ----------------------
+jshell> char A='A'; char B='B';
+A ==> 'A'
+B ==> 'B'
+
+jshell> System.out.print(A+B);//As a character the values won't get concatinated, instead the memory values of the chars will get added and it will show addition
+131
+jshell> System.out.print(""+A+B);// as we have used "" which represents String, It will concatinate the Values present in chars
+AB
+
+--------------------------
+
 
 
 
